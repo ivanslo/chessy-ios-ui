@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F48C45E26243776000B825E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C45D26243776000B825E /* AppDelegate.swift */; };
+		8F48C46026243776000B825E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C45F26243776000B825E /* SceneDelegate.swift */; };
+		8F48C46226243776000B825E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C46126243776000B825E /* ContentView.swift */; };
+		8F48C46426243778000B825E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46326243778000B825E /* Assets.xcassets */; };
+		8F48C46726243778000B825E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46626243778000B825E /* Preview Assets.xcassets */; };
+		8F48C46A26243778000B825E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46826243778000B825E /* LaunchScreen.storyboard */; };
+		8F48C47526243778000B825E /* chessy_ios_uiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C47426243778000B825E /* chessy_ios_uiTests.swift */; };
+		8F48C48026243778000B825E /* chessy_ios_uiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C47F26243778000B825E /* chessy_ios_uiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F48C47126243778000B825E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F48C45226243776000B825E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F48C45926243776000B825E;
+			remoteInfo = "chessy-ios-ui";
+		};
+		8F48C47C26243778000B825E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F48C45226243776000B825E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F48C45926243776000B825E;
+			remoteInfo = "chessy-ios-ui";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F48C45A26243776000B825E /* chessy-ios-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chessy-ios-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F48C45D26243776000B825E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F48C45F26243776000B825E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F48C46126243776000B825E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F48C46326243778000B825E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F48C46626243778000B825E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F48C46926243778000B825E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F48C46B26243778000B825E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F48C47026243778000B825E /* chessy-ios-uiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chessy-ios-uiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F48C47426243778000B825E /* chessy_ios_uiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chessy_ios_uiTests.swift; sourceTree = "<group>"; };
+		8F48C47626243778000B825E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F48C47B26243778000B825E /* chessy-ios-uiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chessy-ios-uiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F48C47F26243778000B825E /* chessy_ios_uiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chessy_ios_uiUITests.swift; sourceTree = "<group>"; };
+		8F48C48126243778000B825E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F48C45726243776000B825E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48C46D26243778000B825E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48C47826243778000B825E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F48C45126243776000B825E = {
+			isa = PBXGroup;
+			children = (
+				8F48C45C26243776000B825E /* chessy-ios-ui */,
+				8F48C47326243778000B825E /* chessy-ios-uiTests */,
+				8F48C47E26243778000B825E /* chessy-ios-uiUITests */,
+				8F48C45B26243776000B825E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F48C45B26243776000B825E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F48C45A26243776000B825E /* chessy-ios-ui.app */,
+				8F48C47026243778000B825E /* chessy-ios-uiTests.xctest */,
+				8F48C47B26243778000B825E /* chessy-ios-uiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F48C45C26243776000B825E /* chessy-ios-ui */ = {
+			isa = PBXGroup;
+			children = (
+				8F48C45D26243776000B825E /* AppDelegate.swift */,
+				8F48C45F26243776000B825E /* SceneDelegate.swift */,
+				8F48C46126243776000B825E /* ContentView.swift */,
+				8F48C46326243778000B825E /* Assets.xcassets */,
+				8F48C46826243778000B825E /* LaunchScreen.storyboard */,
+				8F48C46B26243778000B825E /* Info.plist */,
+				8F48C46526243778000B825E /* Preview Content */,
+			);
+			path = "chessy-ios-ui";
+			sourceTree = "<group>";
+		};
+		8F48C46526243778000B825E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F48C46626243778000B825E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F48C47326243778000B825E /* chessy-ios-uiTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F48C47426243778000B825E /* chessy_ios_uiTests.swift */,
+				8F48C47626243778000B825E /* Info.plist */,
+			);
+			path = "chessy-ios-uiTests";
+			sourceTree = "<group>";
+		};
+		8F48C47E26243778000B825E /* chessy-ios-uiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F48C47F26243778000B825E /* chessy_ios_uiUITests.swift */,
+				8F48C48126243778000B825E /* Info.plist */,
+			);
+			path = "chessy-ios-uiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F48C45926243776000B825E /* chessy-ios-ui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F48C48426243778000B825E /* Build configuration list for PBXNativeTarget "chessy-ios-ui" */;
+			buildPhases = (
+				8F48C45626243776000B825E /* Sources */,
+				8F48C45726243776000B825E /* Frameworks */,
+				8F48C45826243776000B825E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chessy-ios-ui";
+			productName = "chessy-ios-ui";
+			productReference = 8F48C45A26243776000B825E /* chessy-ios-ui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F48C46F26243778000B825E /* chessy-ios-uiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F48C48726243778000B825E /* Build configuration list for PBXNativeTarget "chessy-ios-uiTests" */;
+			buildPhases = (
+				8F48C46C26243778000B825E /* Sources */,
+				8F48C46D26243778000B825E /* Frameworks */,
+				8F48C46E26243778000B825E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F48C47226243778000B825E /* PBXTargetDependency */,
+			);
+			name = "chessy-ios-uiTests";
+			productName = "chessy-ios-uiTests";
+			productReference = 8F48C47026243778000B825E /* chessy-ios-uiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F48C47A26243778000B825E /* chessy-ios-uiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F48C48A26243778000B825E /* Build configuration list for PBXNativeTarget "chessy-ios-uiUITests" */;
+			buildPhases = (
+				8F48C47726243778000B825E /* Sources */,
+				8F48C47826243778000B825E /* Frameworks */,
+				8F48C47926243778000B825E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F48C47D26243778000B825E /* PBXTargetDependency */,
+			);
+			name = "chessy-ios-uiUITests";
+			productName = "chessy-ios-uiUITests";
+			productReference = 8F48C47B26243778000B825E /* chessy-ios-uiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F48C45226243776000B825E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Slobodiuk, Ivan";
+				TargetAttributes = {
+					8F48C45926243776000B825E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					8F48C46F26243778000B825E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 8F48C45926243776000B825E;
+					};
+					8F48C47A26243778000B825E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 8F48C45926243776000B825E;
+					};
+				};
+			};
+			buildConfigurationList = 8F48C45526243776000B825E /* Build configuration list for PBXProject "chessy-ios-ui" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F48C45126243776000B825E;
+			productRefGroup = 8F48C45B26243776000B825E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F48C45926243776000B825E /* chessy-ios-ui */,
+				8F48C46F26243778000B825E /* chessy-ios-uiTests */,
+				8F48C47A26243778000B825E /* chessy-ios-uiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F48C45826243776000B825E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48C46A26243778000B825E /* LaunchScreen.storyboard in Resources */,
+				8F48C46726243778000B825E /* Preview Assets.xcassets in Resources */,
+				8F48C46426243778000B825E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48C46E26243778000B825E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48C47926243778000B825E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F48C45626243776000B825E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48C45E26243776000B825E /* AppDelegate.swift in Sources */,
+				8F48C46026243776000B825E /* SceneDelegate.swift in Sources */,
+				8F48C46226243776000B825E /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48C46C26243778000B825E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48C47526243778000B825E /* chessy_ios_uiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48C47726243778000B825E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F48C48026243778000B825E /* chessy_ios_uiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F48C47226243778000B825E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F48C45926243776000B825E /* chessy-ios-ui */;
+			targetProxy = 8F48C47126243778000B825E /* PBXContainerItemProxy */;
+		};
+		8F48C47D26243778000B825E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F48C45926243776000B825E /* chessy-ios-ui */;
+			targetProxy = 8F48C47C26243778000B825E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F48C46826243778000B825E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F48C46926243778000B825E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F48C48226243778000B825E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F48C48326243778000B825E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F48C48526243778000B825E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"chessy-ios-ui/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TEB8UAB7U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "chessy-ios-ui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slab.ivanslo.chessy-ios-ui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F48C48626243778000B825E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"chessy-ios-ui/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TEB8UAB7U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "chessy-ios-ui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slab.ivanslo.chessy-ios-ui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F48C48826243778000B825E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TEB8UAB7U;
+				INFOPLIST_FILE = "chessy-ios-uiTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slab.ivanslo.chessy-ios-uiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chessy-ios-ui.app/chessy-ios-ui";
+			};
+			name = Debug;
+		};
+		8F48C48926243778000B825E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TEB8UAB7U;
+				INFOPLIST_FILE = "chessy-ios-uiTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slab.ivanslo.chessy-ios-uiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chessy-ios-ui.app/chessy-ios-ui";
+			};
+			name = Release;
+		};
+		8F48C48B26243778000B825E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TEB8UAB7U;
+				INFOPLIST_FILE = "chessy-ios-uiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slab.ivanslo.chessy-ios-uiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "chessy-ios-ui";
+			};
+			name = Debug;
+		};
+		8F48C48C26243778000B825E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TEB8UAB7U;
+				INFOPLIST_FILE = "chessy-ios-uiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slab.ivanslo.chessy-ios-uiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "chessy-ios-ui";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F48C45526243776000B825E /* Build configuration list for PBXProject "chessy-ios-ui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48C48226243778000B825E /* Debug */,
+				8F48C48326243778000B825E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F48C48426243778000B825E /* Build configuration list for PBXNativeTarget "chessy-ios-ui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48C48526243778000B825E /* Debug */,
+				8F48C48626243778000B825E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F48C48726243778000B825E /* Build configuration list for PBXNativeTarget "chessy-ios-uiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48C48826243778000B825E /* Debug */,
+				8F48C48926243778000B825E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F48C48A26243778000B825E /* Build configuration list for PBXNativeTarget "chessy-ios-uiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F48C48B26243778000B825E /* Debug */,
+				8F48C48C26243778000B825E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F48C45226243776000B825E /* Project object */;
+}
