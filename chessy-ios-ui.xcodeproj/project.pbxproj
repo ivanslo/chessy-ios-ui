@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F48C45E26243776000B825E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C45D26243776000B825E /* AppDelegate.swift */; };
 		8F48C46026243776000B825E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C45F26243776000B825E /* SceneDelegate.swift */; };
-		8F48C46226243776000B825E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C46126243776000B825E /* ContentView.swift */; };
+		8F48C46226243776000B825E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C46126243776000B825E /* WelcomeView.swift */; };
 		8F48C46426243778000B825E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46326243778000B825E /* Assets.xcassets */; };
 		8F48C46726243778000B825E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46626243778000B825E /* Preview Assets.xcassets */; };
 		8F48C46A26243778000B825E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46826243778000B825E /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		8F48C45A26243776000B825E /* chessy-ios-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chessy-ios-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F48C45D26243776000B825E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F48C45F26243776000B825E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F48C46126243776000B825E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F48C46126243776000B825E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		8F48C46326243778000B825E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F48C46626243778000B825E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F48C46926243778000B825E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				8F48C45D26243776000B825E /* AppDelegate.swift */,
 				8F48C45F26243776000B825E /* SceneDelegate.swift */,
-				8F48C46126243776000B825E /* ContentView.swift */,
+				8F48C46126243776000B825E /* WelcomeView.swift */,
 				8F48C46326243778000B825E /* Assets.xcassets */,
 				8F48C46826243778000B825E /* LaunchScreen.storyboard */,
 				8F48C46B26243778000B825E /* Info.plist */,
@@ -269,7 +269,7 @@
 			files = (
 				8F48C45E26243776000B825E /* AppDelegate.swift in Sources */,
 				8F48C46026243776000B825E /* SceneDelegate.swift in Sources */,
-				8F48C46226243776000B825E /* ContentView.swift in Sources */,
+				8F48C46226243776000B825E /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
