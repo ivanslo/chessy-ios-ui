@@ -19,6 +19,7 @@ struct WelcomeView: View {
             MyButton(text:"Login")
             MyButton(text:"About")
             Spacer()
+            GameInfoList()
         }
     }
 }

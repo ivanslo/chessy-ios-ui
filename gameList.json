@@ -1,0 +1,51 @@
+[
+    {
+        "black": "Carlsen,M",
+        "event": "Corus A",
+        "result": "1-0",
+        "white": "Topalov,V",
+        "id": "CorusA_WijkaanZeeNED_20070124_10_TopalovV_CarlsenM_10"
+    },
+    {
+        "black": "Anand,V",
+        "event": "GRENKE Chess Classic 2019",
+        "result": "1/2-1/2",
+        "white": "Carlsen,M",
+        "id": "GRENKEChessClassic2019_KarlsruheBadenBadenGER_20190422_31_CarlsenM_AnandV_1212"
+    },
+    {
+        "black": "Karjakin, Sergey",
+        "event": "WCh Rapid TB 2016",
+        "result": "1/2-1/2",
+        "white": "Carlsen, Magnus",
+        "id": "WChRapidTB2016_NewYorkUSA_20161130_2_CarlsenMagnus_KarjakinSergey_1212"
+    },
+    {
+        "black": "Carlsen,M",
+        "event": "World Blitz",
+        "result": "0-1",
+        "white": "Kosteniuk,A",
+        "id": "WorldBlitz_MoscowRUS_20091117_25_KosteniukA_CarlsenM_01"
+    },
+    {
+        "black": "Aronian,L",
+        "event": "GCT Blitz YourNextMove",
+        "result": "1-0",
+        "white": "Carlsen,M",
+        "id": "GCTBlitzYourNextMove_LeuvenBEL_20170701_62_CarlsenM_AronianL_10"
+    },
+    {
+        "black": "Vassallo,M",
+        "event": "11th Aosta Open",
+        "result": "1/2-1/2",
+        "white": "Carlsen,M",
+        "id": "11thAostaOpen_SaintVincentITA_20030214_7_CarlsenM_VassalloM_1212"
+    },
+    {
+        "black": "Kramnik,V",
+        "event": "18th Amber Blindfold",
+        "result": "0-1",
+        "white": "Carlsen,M",
+        "id": "18thAmberBlindfold_NiceFRA_20090325_10_CarlsenM_KramnikV_01"
+    }
+]
