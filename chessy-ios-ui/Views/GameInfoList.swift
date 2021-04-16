@@ -10,12 +10,13 @@ import SwiftUI
 
 struct GameInfoList: View {
     var body: some View {
-        List {
-            GameInfoRow(gameInfo: gameInfoList[0])
-            GameInfoRow(gameInfo: gameInfoList[1])
-            GameInfoRow(gameInfo: gameInfoList[2])
-            GameInfoRow(gameInfo: gameInfoList[3])
-            GameInfoRow(gameInfo: gameInfoList[4])
+        NavigationView{
+            List (gameInfoList) { gameInfo in
+                NavigationLink(destination: GameInfoDetail(gameInfo: gameInfo)){
+                    GameInfoRow(gameInfo: gameInfo)
+                }
+            }
+            .navigationBarTitle("Games")
         }
     }
 }

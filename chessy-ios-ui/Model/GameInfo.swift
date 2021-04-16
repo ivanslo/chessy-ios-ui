@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct GameInfo: Hashable, Codable {
+struct GameInfo: Hashable, Codable, Identifiable {
     var id: String
     var black: String
     var white: String

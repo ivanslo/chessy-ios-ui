@@ -12,6 +12,7 @@
 		8F0EF92E2626EB8300979597 /* ModelGameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EF92D2626EB8300979597 /* ModelGameInfo.swift */; };
 		8F21D3C726282DF90068A943 /* GameInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21D3C626282DF90068A943 /* GameInfoRow.swift */; };
 		8F21D3C926282F090068A943 /* GameInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F21D3C826282F090068A943 /* GameInfoList.swift */; };
+		8F47482E26297FEF001D8D50 /* GameInfoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F47482D26297FEF001D8D50 /* GameInfoDetail.swift */; };
 		8F48C45E26243776000B825E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C45D26243776000B825E /* AppDelegate.swift */; };
 		8F48C46026243776000B825E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C45F26243776000B825E /* SceneDelegate.swift */; };
 		8F48C46226243776000B825E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C46126243776000B825E /* WelcomeView.swift */; };
@@ -45,6 +46,7 @@
 		8F0EF92D2626EB8300979597 /* ModelGameInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGameInfo.swift; sourceTree = "<group>"; };
 		8F21D3C626282DF90068A943 /* GameInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoRow.swift; sourceTree = "<group>"; };
 		8F21D3C826282F090068A943 /* GameInfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoList.swift; sourceTree = "<group>"; };
+		8F47482D26297FEF001D8D50 /* GameInfoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoDetail.swift; sourceTree = "<group>"; };
 		8F48C45A26243776000B825E /* chessy-ios-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chessy-ios-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F48C45D26243776000B825E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F48C45F26243776000B825E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				8F48C46126243776000B825E /* WelcomeView.swift */,
 				8F21D3C626282DF90068A943 /* GameInfoRow.swift */,
 				8F21D3C826282F090068A943 /* GameInfoList.swift */,
+				8F47482D26297FEF001D8D50 /* GameInfoDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F47482E26297FEF001D8D50 /* GameInfoDetail.swift in Sources */,
 				8F48C45E26243776000B825E /* AppDelegate.swift in Sources */,
 				8F48C46026243776000B825E /* SceneDelegate.swift in Sources */,
 				8F48C46226243776000B825E /* WelcomeView.swift in Sources */,

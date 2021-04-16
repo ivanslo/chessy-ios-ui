@@ -14,6 +14,8 @@ struct GameInfoRow: View {
     var body: some View {
         HStack{
             Text(gameInfo.white)
+            Text("vs").bold()
+            Text(gameInfo.black)
         }
     }
 }
@@ -24,6 +26,6 @@ struct GameInfoRow_Previews: PreviewProvider {
             GameInfoRow(gameInfo: gameInfoList[0])
             GameInfoRow(gameInfo: gameInfoList[1])
         }
-        .previewLayout(.fixed(width: 300, height: 700 ))
+        .previewLayout(.fixed(width: 300, height: 70 ))
     }
 }
