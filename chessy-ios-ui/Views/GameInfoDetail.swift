@@ -9,23 +9,28 @@
 import SwiftUI
 
 struct GameInfoDetail: View {
-    var gameInfo: GameInfo
+    var gameDetail: GameDetail
     var body: some View {
         VStack{
-          Text(gameInfo.white)
+          Text(gameDetail.White)
           Text("vs").bold()
-          Text(gameInfo.black)
+          Text(gameDetail.Black)
           HStack{
             Text("Result:")
-            Text(gameInfo.result).bold()
+            Text(gameDetail.Result).bold()
          }
+            if gameDetail.Date != nil {
+                Text(gameDetail.Date!)
+            }
 
-       }.navigationBarTitle(gameInfo.event)
+            Text(gameDetail.addedDate)
+            Text(gameDetail.jsonFile)
+       }.navigationBarTitle(gameDetail.Event)
     }
 }
 
 struct GameInfoDetail_Previews: PreviewProvider {
     static var previews: some View {
-        GameInfoDetail(gameInfo: gameInfoList[0])
+        GameInfoDetail(gameDetail: gameDetail)
     }
 }

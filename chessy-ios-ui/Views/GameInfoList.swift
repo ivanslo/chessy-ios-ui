@@ -12,7 +12,7 @@ struct GameInfoList: View {
     var body: some View {
         NavigationView{
             List (gameInfoList) { gameInfo in
-                NavigationLink(destination: GameInfoDetail(gameInfo: gameInfo)){
+                NavigationLink(destination: GameInfoDetail(gameDetail: gameDetail)){
                     GameInfoRow(gameInfo: gameInfo)
                 }
             }

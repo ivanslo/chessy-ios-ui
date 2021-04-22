@@ -21,6 +21,8 @@
 		8F48C46A26243778000B825E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F48C46826243778000B825E /* LaunchScreen.storyboard */; };
 		8F48C47526243778000B825E /* chessy_ios_uiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C47426243778000B825E /* chessy_ios_uiTests.swift */; };
 		8F48C48026243778000B825E /* chessy_ios_uiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F48C47F26243778000B825E /* chessy_ios_uiUITests.swift */; };
+		8FD0145D2631689600F764BD /* gameDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0145C2631689600F764BD /* gameDetail.json */; };
+		8FD0145F263168C200F764BD /* GameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0145E263168C200F764BD /* GameDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		8F48C47B26243778000B825E /* chessy-ios-uiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chessy-ios-uiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F48C47F26243778000B825E /* chessy_ios_uiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chessy_ios_uiUITests.swift; sourceTree = "<group>"; };
 		8F48C48126243778000B825E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD0145C2631689600F764BD /* gameDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gameDetail.json; sourceTree = "<group>"; };
+		8FD0145E263168C200F764BD /* GameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 			children = (
 				8F0EF92B2626EB1E00979597 /* GameInfo.swift */,
 				8F0EF92D2626EB8300979597 /* ModelGameInfo.swift */,
+				8FD0145E263168C200F764BD /* GameDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 		8F48C45126243776000B825E = {
 			isa = PBXGroup;
 			children = (
+				8FD0145C2631689600F764BD /* gameDetail.json */,
 				8F0EF9292626EAE400979597 /* gameList.json */,
 				8F48C45C26243776000B825E /* chessy-ios-ui */,
 				8F48C47326243778000B825E /* chessy-ios-uiTests */,
@@ -274,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD0145D2631689600F764BD /* gameDetail.json in Resources */,
 				8F48C46A26243778000B825E /* LaunchScreen.storyboard in Resources */,
 				8F48C46726243778000B825E /* Preview Assets.xcassets in Resources */,
 				8F48C46426243778000B825E /* Assets.xcassets in Resources */,
@@ -309,6 +316,7 @@
 				8F0EF92C2626EB1E00979597 /* GameInfo.swift in Sources */,
 				8F21D3C726282DF90068A943 /* GameInfoRow.swift in Sources */,
 				8F0EF92E2626EB8300979597 /* ModelGameInfo.swift in Sources */,
+				8FD0145F263168C200F764BD /* GameDetail.swift in Sources */,
 				8F21D3C926282F090068A943 /* GameInfoList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
