@@ -11,21 +11,25 @@ import SwiftUI
 struct GameInfoDetail: View {
     var gameDetail: GameDetail
     var body: some View {
-        VStack{
-          Text(gameDetail.White)
-          Text("vs").bold()
-          Text(gameDetail.Black)
-          HStack{
-            Text("Result:")
-            Text(gameDetail.Result).bold()
-         }
-            if gameDetail.Date != nil {
-                Text(gameDetail.Date!)
-            }
+        ZStack{
+            Board()
+            VStack{
+              Text(gameDetail.White)
+              Text("vs").bold()
+              Text(gameDetail.Black)
+              HStack{
+                Text("Result:")
+                Text(gameDetail.Result).bold()
+             }
+                if gameDetail.Date != nil {
+                    Text(gameDetail.Date!)
+                }
 
-            Text(gameDetail.addedDate)
-            Text(gameDetail.jsonFile)
-       }.navigationBarTitle(gameDetail.Event)
+                Text(gameDetail.addedDate)
+                //Text(gameDetail.jsonFile)
+           }.navigationBarTitle(gameDetail.Event)
+        }
+
     }
 }
 
