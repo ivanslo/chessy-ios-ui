@@ -26,7 +26,9 @@ struct GameInfoDetail: View {
                 }
 
                 Text(gameDetail.addedDate)
-                //Text(gameDetail.jsonFile)
+                Text(gameDetail.jsonFileParsed.steps[0].board)
+                Text(gameDetail.jsonFileParsed.steps[1].board)
+                Text(gameDetail.jsonFileParsed.steps[2].board)
            }.navigationBarTitle(gameDetail.Event)
         }
 
