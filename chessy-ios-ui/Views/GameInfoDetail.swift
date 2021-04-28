@@ -8,28 +8,58 @@
 
 import SwiftUI
 
+extension Comparable {
+    func clamped(_ f: Self, _ t: Self) -> Self {
+        var r = self
+        if r < f { r = f }
+        if r > t { r = t }
+        return r
+    }
+}
+
+
 struct GameInfoDetail: View {
     var gameDetail: GameDetail
-    var body: some View {
-        ZStack{
-            Board()
-            VStack{
-              Text(gameDetail.White)
-              Text("vs").bold()
-              Text(gameDetail.Black)
-              HStack{
-                Text("Result:")
-                Text(gameDetail.Result).bold()
-             }
-                if gameDetail.Date != nil {
-                    Text(gameDetail.Date!)
-                }
 
-                Text(gameDetail.addedDate)
-                Text(gameDetail.jsonFileParsed.steps[0].board)
-                Text(gameDetail.jsonFileParsed.steps[1].board)
-                Text(gameDetail.jsonFileParsed.steps[2].board)
-           }.navigationBarTitle(gameDetail.Event)
+    func playNext(_ nr : Int) -> Int {
+        return (nr + 1).clamped(0, gameDetail.jsonFileParsed.steps.count-1)
+//        if next >= self.gameDetail.jsonFileParsed.steps.count {
+//            return nr
+//        }
+//        return next
+    }
+    func playBefore(_ nr : Int) -> Int {
+        return (nr - 1).clamped(0, gameDetail.jsonFileParsed.steps.count-1)
+//        let before = nr - 1
+//        if before < 0 {
+//            return nr
+//        }
+//        return before
+    }
+
+    @State private var idx: Int = 0
+    var body: some View {
+        VStack{
+            ZStack{
+                Board()
+                Text(gameDetail.jsonFileParsed.steps[idx].board)
+            }
+            HStack{
+                Button(action:{
+                    self.idx = self.playBefore(self.idx)
+                }){
+                    Text("<")
+                }
+                .frame(width: 70, height: 50)
+                .background(Color.gray)
+                Button(action:{
+                    self.idx = self.playNext(self.idx)
+                }){
+                    Text(">")
+                }
+                .frame(width: 70, height: 50)
+                .background(Color.gray)
+            }
         }
 
     }
