@@ -23,18 +23,9 @@ struct GameInfoDetail: View {
 
     func playNext(_ nr : Int) -> Int {
         return (nr + 1).clamped(0, gameDetail.jsonFileParsed.steps.count-1)
-//        if next >= self.gameDetail.jsonFileParsed.steps.count {
-//            return nr
-//        }
-//        return next
     }
     func playBefore(_ nr : Int) -> Int {
         return (nr - 1).clamped(0, gameDetail.jsonFileParsed.steps.count-1)
-//        let before = nr - 1
-//        if before < 0 {
-//            return nr
-//        }
-//        return before
     }
 
     @State private var idx: Int = 0
@@ -42,8 +33,9 @@ struct GameInfoDetail: View {
         VStack{
             ZStack{
                 Board()
-                Text(gameDetail.jsonFileParsed.steps[idx].board)
-            }
+                Pieces()
+            }.frame(width: 370, height: 370).border(Color.blue, width: 10)
+
             HStack{
                 Button(action:{
                     self.idx = self.playBefore(self.idx)
@@ -60,6 +52,7 @@ struct GameInfoDetail: View {
                 .frame(width: 70, height: 50)
                 .background(Color.gray)
             }
+            Text(gameDetail.jsonFileParsed.steps[idx].board)
         }
 
     }

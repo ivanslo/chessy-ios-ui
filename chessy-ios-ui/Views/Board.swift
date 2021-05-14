@@ -38,12 +38,11 @@ struct Board: View {
         ChessBoard()
             .fill(Color.red)
             .background(Color.orange)
-            .frame(width:300, height:300)
     }
 }
 
 struct Board_Previews: PreviewProvider {
     static var previews: some View {
-        Board()
+        Board().frame(width:300, height: 300)
     }
 }
