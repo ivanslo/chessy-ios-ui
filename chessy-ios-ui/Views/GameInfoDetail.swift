@@ -30,10 +30,12 @@ struct GameInfoDetail: View {
 
     @State private var idx: Int = 0
     var body: some View {
+        
         VStack{
             ZStack{
                 Board()
                 Pieces()
+//                Pieces(arrangementStr: gameDetail.jsonFileParsed.steps[idx].board)
             }.frame(width: 370, height: 370).border(Color.blue, width: 10)
 
             HStack{
