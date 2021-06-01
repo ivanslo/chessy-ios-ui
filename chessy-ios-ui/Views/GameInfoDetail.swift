@@ -34,9 +34,8 @@ struct GameInfoDetail: View {
         VStack{
             ZStack{
                 Board()
-                Pieces()
-//                Pieces(arrangementStr: gameDetail.jsonFileParsed.steps[idx].board)
-            }.frame(width: 370, height: 370).border(Color.blue, width: 10)
+                Pieces(arrangementStr: gameDetail.jsonFileParsed.steps[idx].board)
+            }.frame(width: 370, height: 370)
 
             HStack{
                 Button(action:{

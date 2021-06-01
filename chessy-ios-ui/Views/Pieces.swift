@@ -18,7 +18,7 @@ struct Pieces: View {
         let extra_offset = ((size.width / 8) - PIECE_SIZE) / 2
         let x = squareCorner  + PIECE_OFFSET + extra_offset
 
-        let squareCornerY = (size.height / 8) * CGFloat(7-rank)
+        let squareCornerY = (size.height / 8) * CGFloat(rank)
         let extra_offsetY = ((size.height / 8) - PIECE_SIZE) / 2
         let y = squareCornerY  + PIECE_OFFSET + extra_offsetY
 

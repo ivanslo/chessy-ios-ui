@@ -21,7 +21,7 @@ struct ChessBoard: Shape {
 
         for i in 0..<8 {
             for j in 0..<8 {
-                if (i+j).isMultiple(of: 2){
+                if !(i+j).isMultiple(of: 2){
                     let startX = CGFloat(i) * w
                     let startY = CGFloat(j) * h
                     let rect = CGRect(x:startX, y:startY, width: w, height: h)
