@@ -20,6 +20,9 @@ struct GameInfoRow: View {
     }
 }
 
+
+/* Preview
+----------------------------------------------------------*/
 struct GameInfoRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {

@@ -33,6 +33,9 @@ struct MyButton: View {
     }
 }
 
+
+/* Preview
+----------------------------------------------------------*/
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()

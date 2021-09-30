@@ -36,6 +36,9 @@ struct Piece: View {
     }
 }
 
+
+/* Preview
+----------------------------------------------------------*/
 struct Piece_Previews: PreviewProvider {
     static var previews: some View {
         List{

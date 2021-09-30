@@ -8,8 +8,16 @@
 
 import Foundation
 
-var gameInfoList: [GameInfo] = load("gameList.json")
-var gameDetail: GameDetail = load("gameDetail.json")
+let LIST_URL = "https://lncbz6li8i.execute-api.eu-west-2.amazonaws.com/prod/getlist"
+
+//
+//var gameInfoList: [GameInfo] = load("gameList.json")
+//var gameDetail: GameDetail = load("gameDetail.json")
+
+
+/*
+ * load<T> opens a local JSON file and decodes it as T.
+ */
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

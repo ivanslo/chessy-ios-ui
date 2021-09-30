@@ -54,9 +54,12 @@ struct Pieces: View {
                     .position(self.getPos(file: Int(nr % 8), rank: nr / 8, size: geometry.size))
             }
         }
+        
     }
 }
 
+/* Preview
+----------------------------------------------------------*/
 struct Pieces_Previews: PreviewProvider {
     static var previews: some View {
         Pieces()

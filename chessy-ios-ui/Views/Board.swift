@@ -13,7 +13,7 @@ struct ChessBoard: Shape {
      ChessBoard Shape draws the squares of the 'dark' pieces.
      To theme the board one should `fill` with one color and `background` with another.
      */
-    func path( in rect:CGRect) -> Path {
+    func path(in rect: CGRect) -> Path {
         var path = Path()
 
         let w = rect.width / 8
@@ -21,10 +21,10 @@ struct ChessBoard: Shape {
 
         for i in 0..<8 {
             for j in 0..<8 {
-                if !(i+j).isMultiple(of: 2){
+                if !(i + j).isMultiple(of: 2) {
                     let startX = CGFloat(i) * w
                     let startY = CGFloat(j) * h
-                    let rect = CGRect(x:startX, y:startY, width: w, height: h)
+                    let rect = CGRect(x: startX, y: startY, width: w, height: h)
                     path.addRect(rect)
                 }
             }
@@ -34,15 +34,23 @@ struct ChessBoard: Shape {
 }
 
 struct Board: View {
+    var dark = Color.black
+    var light = Color.gray
     var body: some View {
         ChessBoard()
-            .fill(Color.red)
-            .background(Color.orange)
+            .fill(dark)
+            .background(light)
     }
 }
 
+
+/* Preview
+----------------------------------------------------------*/
 struct Board_Previews: PreviewProvider {
     static var previews: some View {
-        Board().frame(width:300, height: 300)
+        VStack {
+            Board().frame(width: 300, height: 300)
+            Board(dark: Color.red, light: Color.orange).frame(width: 300, height: 300)
+        }
     }
 }

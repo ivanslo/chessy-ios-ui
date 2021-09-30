@@ -8,15 +8,6 @@
 
 import SwiftUI
 
-extension Comparable {
-    func clamped(_ f: Self, _ t: Self) -> Self {
-        var r = self
-        if r < f { r = f }
-        if r > t { r = t }
-        return r
-    }
-}
-
 struct GradientButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
@@ -45,7 +36,7 @@ struct GameInfoDetail: View {
                 Board()
                 Pieces(arrangementStr: gameDetail.jsonFileParsed.steps[idx].board)
             }.aspectRatio(1, contentMode: .fit)
-
+            
             HStack{
                 Button(action: playBefore , label: {
                     Image(systemName: "chevron.left.circle")
@@ -63,6 +54,9 @@ struct GameInfoDetail: View {
     }
 }
 
+
+/* Preview
+----------------------------------------------------------*/
 struct GameInfoDetail_Previews: PreviewProvider {
     static var previews: some View {
         GameInfoDetail(gameDetail: gameDetail)

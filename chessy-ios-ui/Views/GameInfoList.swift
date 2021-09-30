@@ -21,6 +21,8 @@ struct GameInfoList: View {
     }
 }
 
+/* Preview
+----------------------------------------------------------*/
 struct GameInfoList_Previews: PreviewProvider {
     static var previews: some View {
         GameInfoList()
