@@ -22,9 +22,15 @@ class GameVM: ObservableObject {
 
     init(withGameData data: GameData) {
         game = GameModel(fromData: data)
+        orientation = .fromWhiteToBlack
     }
 
-    var gameId: String { game.blackPlayer }
+    @Published public var orientation: GameOrientation
+
+    var blackPlayer: String { game.blackPlayer }
+    var whitePlayer: String { game.whitePlayer }
+    var gameEvent: String { game.event }
+    var gameDate: String { game.date }
 
     // MARK: Intents
 
@@ -36,5 +42,20 @@ class GameVM: ObservableObject {
     public func retrocede() {
         let limit = game.piecesInMovement.count - 1
         game.currentMovement = (game.currentMovement - 1).clamped(0, limit)
+
     }
+
+    public func switchSide() {
+        if orientation == .fromBlackToWhite {
+            orientation  = .fromWhiteToBlack
+        } else {
+            orientation = .fromBlackToWhite
+        }
+    }
+
+}
+
+enum GameOrientation {
+    case fromWhiteToBlack
+    case fromBlackToWhite
 }

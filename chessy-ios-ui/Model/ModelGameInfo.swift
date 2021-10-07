@@ -10,9 +10,9 @@ import Foundation
 
 let LIST_URL = "https://lncbz6li8i.execute-api.eu-west-2.amazonaws.com/prod/getlist"
 
-//
-//var gameInfoList: [GameInfo] = load("gameList.json")
-//var gameDetail: GameDetail = load("gameDetail.json")
+// TODO: get rid of these once I clean-up the UI
+var gameInfoList: [GameInfo] = load("gameList.json")
+var gameDetail: GameDetail = load("gameDetail.json")
 
 
 /*

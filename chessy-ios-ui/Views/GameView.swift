@@ -13,34 +13,43 @@ struct GameView: View {
 
     var body: some View {
         VStack {
-            Text(game.gameId).font(.system(size: 10))
+            Text(game.gameEvent).font(.system(size: 10))
             ZStack {
                 Board(dark: Color.gray, light: Color.white)
-                PiecesView(pieces: game.piecesInBoard)
-            }.aspectRatio(1, contentMode: .fit)
+                PiecesView(pieces: game.piecesInBoard, boardOrientation: game.orientation)
+            }
+            .aspectRatio(1, contentMode: .fit)
+            .padding()
 
-            HStack{
+            VStack {
+                HStack {
+                    Button(action: {
+                        withAnimation {
+                            self.game.retrocede()
+                        }
 
+                    }, label: {
+                        Image(systemName: "chevron.left.circle")
+                    })
+                    Button(action: {
+                        withAnimation {
+                            self.game.advance()
+                        }
+                    }, label: {
+                        Image(systemName: "chevron.right.circle")
+                    })
+                }
                 Button(action: {
-                    withAnimation {
-                        self.game.retrocede()
+                   self.game.switchSide()
+                   },
+                   label: {
+                       Image(systemName: "crop.rotate")
                     }
-
-                }, label: {
-                    Image(systemName: "chevron.left.circle")
-                })
-                Button(action: {
-                    withAnimation {
-                        self.game.advance()
-                    }
-                }, label: {
-                    Image(systemName: "chevron.right.circle")
-                })
+                )
             }
         }
     }
 }
-
 
 /* Preview
  ----------------------------------------------------------*/

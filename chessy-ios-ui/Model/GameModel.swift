@@ -12,6 +12,9 @@ struct GameModel {
     let blackPlayer: String
     let whitePlayer: String
 
+    let event: String
+    let date: String
+
     let piecesInMovement: [[PieceInBoard]]
 
     var currentMovement: Int
@@ -19,6 +22,9 @@ struct GameModel {
     init(fromData data: GameData) {
         blackPlayer = data.Black
         whitePlayer = data.White
+        event = data.Event
+        date = data.Date ?? "-"
+
         currentMovement = 0
 
         var _piecesInMovement: [[PieceInBoard]] = []
