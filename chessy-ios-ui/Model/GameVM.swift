@@ -22,10 +22,7 @@ class GameVM: ObservableObject {
 
     init(withGameData data: GameData) {
         game = GameModel(fromData: data)
-        orientation = .fromWhiteToBlack
     }
-
-    @Published public var orientation: GameOrientation
 
     var blackPlayer: String { game.blackPlayer }
     var whitePlayer: String { game.whitePlayer }
@@ -44,15 +41,6 @@ class GameVM: ObservableObject {
         game.currentMovement = (game.currentMovement - 1).clamped(0, limit)
 
     }
-
-    public func switchSide() {
-        if orientation == .fromBlackToWhite {
-            orientation  = .fromWhiteToBlack
-        } else {
-            orientation = .fromBlackToWhite
-        }
-    }
-
 }
 
 enum GameOrientation {

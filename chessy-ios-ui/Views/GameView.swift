@@ -11,15 +11,18 @@ import SwiftUI
 struct GameView: View {
     @ObservedObject var game: GameVM
 
+    @State private var boardOrientation: GameOrientation = .fromWhiteToBlack
+
     var body: some View {
         VStack {
             Text(game.gameEvent).font(.system(size: 10))
             ZStack {
                 Board(dark: Color.gray, light: Color.white)
-                PiecesView(pieces: game.piecesInBoard, boardOrientation: game.orientation)
+                PiecesView(pieces: game.piecesInBoard, orientation: boardOrientation)
             }
             .aspectRatio(1, contentMode: .fit)
             .padding()
+            .rotationEffect(Angle.degrees((self.boardOrientation == .fromWhiteToBlack) ? 0 : 180))
 
             VStack {
                 HStack {
@@ -40,12 +43,17 @@ struct GameView: View {
                     })
                 }
                 Button(action: {
-                   self.game.switchSide()
-                   },
-                   label: {
-                       Image(systemName: "crop.rotate")
-                    }
-                )
+                           withAnimation {
+                               if self.boardOrientation == .fromBlackToWhite {
+                                   self.boardOrientation = .fromWhiteToBlack
+                               } else {
+                                   self.boardOrientation = .fromBlackToWhite
+                               }
+                           }
+                       },
+                       label: {
+                           Image(systemName: "crop.rotate")
+                       })
             }
         }
     }

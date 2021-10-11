@@ -10,11 +10,11 @@ import Foundation
 import SwiftUI
 
 struct Utilities {
-    static func getPiecePositionInBoard(file: Int, rank: Int, boardSize: CGSize, pieceSideSize: CGFloat, boardOrientation: GameOrientation) -> CGPoint {
+    static func getPiecePositionInBoard(file: Int, rank: Int, boardSize: CGSize, pieceSideSize: CGFloat) -> CGPoint {
         let pieceSizeOffset: CGFloat = pieceSideSize / 2
 
-        let realRank = boardOrientation == .fromBlackToWhite ? rank : (7-rank)
-        let realFile = boardOrientation == .fromBlackToWhite ? (7-file) : file
+        let realRank = (7-rank)
+        let realFile = file
 
 
         let squareCorner = (boardSize.width / 8) * CGFloat(realFile)

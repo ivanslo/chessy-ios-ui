@@ -10,13 +10,14 @@ import SwiftUI
 
 struct PiecesView: View {
     var pieces: [PieceInBoard]
-    var boardOrientation: GameOrientation = .fromWhiteToBlack
+    var orientation: GameOrientation = .fromWhiteToBlack
 
     var body: some View {
         GeometryReader { geometry in
             ForEach(self.pieces) { piece in
                 Piece(piece: piece.face)
-                    .position(Utilities.getPiecePositionInBoard(file: piece.file, rank: piece.rank, boardSize: geometry.size, pieceSideSize: 34, boardOrientation: self.boardOrientation))
+                    .rotationEffect(Angle.degrees( (self.orientation == .fromWhiteToBlack) ? 0 : 180))
+                    .position(Utilities.getPiecePositionInBoard(file: piece.file, rank: piece.rank, boardSize: geometry.size, pieceSideSize: 34))
             }
         }
     }
