@@ -17,7 +17,11 @@ struct PiecesView: View {
             ForEach(self.pieces) { piece in
                 Piece(piece: piece.face)
                     .rotationEffect(Angle.degrees( (self.orientation == .fromWhiteToBlack) ? 0 : 180))
+                    .scaleEffect(piece.justChanged ? 1.3 : 1)
+                    .border(Color.green, width: piece.justChanged ? 5 : 0 )
                     .position(Utilities.getPiecePositionInBoard(file: piece.file, rank: piece.rank, boardSize: geometry.size, pieceSideSize: 34))
+
+
             }
         }
     }
@@ -37,11 +41,11 @@ struct PiecesView: View {
 /* Preview
 ----------------------------------------------------------*/
 let piecesInBoard = [
-    PieceInBoard(id: "r1", face: "r", file: 4, rank: 5),
-    PieceInBoard(id: "n1", face: "n", file: 0, rank: 0),
-    PieceInBoard(id: "b1", face: "B", file: 3, rank: 1),
-    PieceInBoard(id: "b2", face: "b", file: 2, rank: 5),
-    PieceInBoard(id: "Q1", face: "Q", file: 7, rank: 7)
+    PieceInBoard(id: "r1", face: "r", file: 4, rank: 5, justChanged: false),
+    PieceInBoard(id: "n1", face: "n", file: 0, rank: 0, justChanged: false),
+    PieceInBoard(id: "b1", face: "B", file: 3, rank: 1, justChanged: true),
+    PieceInBoard(id: "b2", face: "b", file: 2, rank: 5, justChanged: false),
+    PieceInBoard(id: "Q1", face: "Q", file: 7, rank: 7, justChanged: false)
 ]
 
 struct PiecesView_Previews: PreviewProvider {

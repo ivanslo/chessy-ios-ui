@@ -87,5 +87,6 @@ struct GameData: Hashable, Codable {
         let pos: String
         let face: String
         let taken: Bool
+        var justMoved: Bool?
     }
 }

@@ -31,6 +31,9 @@ struct GameModel {
 
         var dict: [String: GameData.PieceArrangementDetail] = [:]
         for step in data.jsonFile.steps {
+            for key in dict.keys {
+                dict[key]!.justMoved = false
+            }
             dict["r1"] = step.boardDictDiff.r1 ?? dict["r1"]
             dict["r2"] = step.boardDictDiff.r2 ?? dict["r2"]
             dict["n1"] = step.boardDictDiff.n1 ?? dict["n1"]
@@ -68,10 +71,12 @@ struct GameModel {
             var movement: [PieceInBoard] = []
             for key in dict.keys {
                 if !dict[key]!.taken {
+                    let moved = _piecesInMovement.count != 0 && dict[key]!.justMoved != false
                     movement.append(PieceInBoard(id: key,
                                                  face: dict[key]!.face,
                                                  file: Utilities.fileFromPos(dict[key]!.pos),
-                                                 rank: Utilities.rankFromPos(dict[key]!.pos)))
+                                                 rank: Utilities.rankFromPos(dict[key]!.pos),
+                                                 justChanged: moved))
                 }
             }
             _piecesInMovement.append(movement)
@@ -90,4 +95,5 @@ struct PieceInBoard: Identifiable, Hashable {
     let face: String
     let file: Int
     let rank: Int
+    let justChanged: Bool
 }
