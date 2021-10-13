@@ -19,15 +19,22 @@ class GameVM: ObservableObject {
     var piecesInBoard: [PieceInBoard] {
         game.piecesInMovement[game.currentMovement]
     }
+    var piecesTaken: [PieceTaken] {
+        game.piecesTaken[game.currentMovement]
+    }
 
     init(withGameData data: GameData) {
         game = GameModel(fromData: data)
+        game.currentMovement = 25
     }
 
     var blackPlayer: String { game.blackPlayer }
     var whitePlayer: String { game.whitePlayer }
     var gameEvent: String { game.event }
     var gameDate: String { game.date }
+    var whiteElo: String { game.whiteElo }
+    var blackElo: String { game.blackElo }
+
 
     // MARK: Intents
 

@@ -12,10 +12,14 @@ struct GameModel {
     let blackPlayer: String
     let whitePlayer: String
 
+    let blackElo: String
+    let whiteElo: String
+
     let event: String
     let date: String
 
     let piecesInMovement: [[PieceInBoard]]
+    let piecesTaken: [[PieceTaken]]
 
     var currentMovement: Int
 
@@ -24,10 +28,13 @@ struct GameModel {
         whitePlayer = data.White
         event = data.Event
         date = data.Date ?? "-"
+        blackElo = data.BlackElo ?? "?"
+        whiteElo = data.WhiteElo ?? "?"
 
         currentMovement = 0
 
         var _piecesInMovement: [[PieceInBoard]] = []
+        var _piecesTaken: [[PieceTaken]] = []
 
         var dict: [String: GameData.PieceArrangementDetail] = [:]
         for step in data.jsonFile.steps {
@@ -69,6 +76,7 @@ struct GameModel {
             dict["P8"] = step.boardDictDiff.P8 ?? dict["P8"]
 
             var movement: [PieceInBoard] = []
+            var taken: [PieceTaken] = []
             for key in dict.keys {
                 if !dict[key]!.taken {
                     let moved = _piecesInMovement.count != 0 && dict[key]!.justMoved != false
@@ -78,12 +86,31 @@ struct GameModel {
                                                  rank: Utilities.rankFromPos(dict[key]!.pos),
                                                  justChanged: moved))
                 }
+                else {
+                    let face = dict[key]!.face
+                    let color : PieceColor = face.first!.isUppercase ? .white : .black
+                    taken.append(PieceTaken(id: key, face: face, color: color ))
+                }
             }
+
             _piecesInMovement.append(movement)
+            _piecesTaken.append(taken)
         }
 
         piecesInMovement = _piecesInMovement
+        piecesTaken = _piecesTaken
     }
+}
+
+struct PieceTaken: Identifiable, Hashable {
+    let id: String
+    let face: String
+    let color: PieceColor
+}
+
+enum PieceColor {
+    case white
+    case black
 }
 
 struct PieceInBoard: Identifiable, Hashable {

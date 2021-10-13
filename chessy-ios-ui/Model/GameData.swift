@@ -14,7 +14,7 @@ import Foundation
  * Its purpose is to put in struct format the content of such file.
  * That explains why it's Hashable and Codable
  */
-struct GameData: Hashable, Codable {
+struct GameData: Codable {
     let id: String
     let Black: String
     let White: String
@@ -35,16 +35,16 @@ struct GameData: Hashable, Codable {
 
     let jsonFile: GameDetailModel
 
-    struct GameDetailModel: Hashable, Codable {
+    struct GameDetailModel: Codable {
         let steps: [GameStepModel]
     }
 
-    struct GameStepModel: Hashable, Codable {
+    struct GameStepModel: Codable {
         let board: String
         let boardDictDiff: PiecesArrangement
     }
 
-    struct PiecesArrangement: Hashable, Codable {
+    struct PiecesArrangement: Codable {
         // black pieces
         let r1: PieceArrangementDetail?
         let r2: PieceArrangementDetail?
@@ -83,7 +83,7 @@ struct GameData: Hashable, Codable {
 
     }
 
-    struct PieceArrangementDetail: Hashable, Codable {
+    struct PieceArrangementDetail: Codable {
         let pos: String
         let face: String
         let taken: Bool
