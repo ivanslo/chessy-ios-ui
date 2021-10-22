@@ -88,7 +88,7 @@ struct GameModel {
                 }
                 else {
                     let face = dict[key]!.face
-                    let color : PieceColor = face.first!.isUppercase ? .white : .black
+                    let color : PlayerSide = face.first!.isUppercase ? .whites : .blacks
                     taken.append(PieceTaken(id: key, face: face, color: color ))
                 }
             }
@@ -105,12 +105,12 @@ struct GameModel {
 struct PieceTaken: Identifiable, Hashable {
     let id: String
     let face: String
-    let color: PieceColor
+    let color: PlayerSide
 }
 
-enum PieceColor {
-    case white
-    case black
+enum PlayerSide {
+    case whites
+    case blacks
 }
 
 struct PieceInBoard: Identifiable, Hashable {
